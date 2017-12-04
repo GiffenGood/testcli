@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  show = true;
+  isBad = false;
+  pos : string;
+
+  onMove(event : MouseEvent){
+    this.pos = `${event.x},${event.y}`;
+  }
 }
