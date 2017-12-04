@@ -21,7 +21,7 @@
     </li>
   </ul>
 </div>
-<div id="divMine" [class.bad]="isBad">{{isBad}}</div>
+<div id="divMine" [ngClass]="classes">{{isBad}}</div>
 <button [style.color]="show ? 'red': 'green'">Red</button>
 
 <input [value]="currentHero.name" (input)="currentHero.name=$event.target.value" #input> {{input.value}} {{currentHero | json}}
