@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CoolTimerComponent } from './cool-timer/cool-timer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CoolTimerComponent
   ],
   imports: [
     BrowserModule

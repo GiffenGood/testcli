@@ -10,8 +10,15 @@ export class AppComponent {
   show = true;
   isBad = false;
   pos : string;
+  currentHero = {
+    name : 'david'
+  }
 
   onMove(event : MouseEvent){
     this.pos = `${event.x},${event.y}`;
+  }
+
+  onTick(value : Date){
+    console.log(value.toString());
   }
 }
